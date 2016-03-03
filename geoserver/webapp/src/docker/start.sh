@@ -11,4 +11,9 @@ else
     chown -R jetty:jetty /var/local/geoserver
 fi
 cd /var/lib/jetty
-exec java -Djava.io.tmpdir=/tmp/jetty -DGEOSERVER_DATA_DIR=/var/local/geoserver/ -Dgeorchestra.datadir=/etc/georchestra -Dgeofence.dir=/etc/georchestra/geoserver/geofence -jar /usr/local/jetty/start.jar
+exec java -Djava.io.tmpdir=/tmp/jetty \
+          -DGEOSERVER_DATA_DIR=/var/local/geoserver/ \
+          -Dgeorchestra.datadir=/etc/georchestra \
+          -Dgeofence.dir=/etc/georchestra/geoserver/geofence \
+          -jar /usr/local/jetty/start.jar
+

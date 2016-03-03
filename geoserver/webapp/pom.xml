@@ -1000,11 +1000,6 @@
                   <directory>${project.build.directory}</directory>
                   <include>geoserver.war</include>
                 </resource>
-                <resource>
-                <targetPath>/root</targetPath>
-                <directory>${project.basedir}/src/docker</directory>
-                <include>start.sh</include>
-              </resource>
               </resources>
               <serverId>docker-hub</serverId>
               <registryUrl>https://index.docker.io/v1/</registryUrl>
