@@ -108,4 +108,10 @@ public class HomeController {
         return "forbidden";
     }
 
+    @RequestMapping(value="/console/private/")
+    public String consoleHome(HttpServletRequest request) throws IOException{
+        return "consoleUi";
+    }
+
+
 }
